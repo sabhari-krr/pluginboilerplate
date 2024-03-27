@@ -1,0 +1,15 @@
+{
+    "name": "sabhari/codeground",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sabhari-krr",
+            "email": "sabhari.a.krr@gmail.com"
+        }
+    ],
+    "require": {}
+}
