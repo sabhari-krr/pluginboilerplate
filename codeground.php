@@ -28,3 +28,5 @@ if(class_exists(\App\Router::class)){
     $router_instance = new \App\Router();
     $router_instance->init();
 }
+
+

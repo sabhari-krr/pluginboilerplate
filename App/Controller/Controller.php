@@ -25,4 +25,21 @@ class Controller
             CG_PLUGIN_PATH.'App/View/'
         );
     }
+
+    public function registerEndPoint(){
+        register_rest_route('v5','/greet',
+            array(
+                'methods' => 'GET',
+                'callback' => [$this,'getGreetings']
+            ));
+    }
+
+    public function getGreetings($request)
+    {
+        $data = array(
+            'message' =>'Hello world using MVC'
+        );
+
+        return rest_ensure_response($data);
+    }
 }
